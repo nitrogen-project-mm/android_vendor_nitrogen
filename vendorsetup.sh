@@ -1,1 +1,1 @@
-add_lunch_combo chroma_shamu-user
+add_lunch_combo nitrogen_shamu-user

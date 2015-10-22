@@ -3,4 +3,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/chroma/sepolicy
+    vendor/nitrogen/sepolicy

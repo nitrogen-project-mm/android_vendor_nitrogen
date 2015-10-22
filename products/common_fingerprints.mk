@@ -1,4 +1,4 @@
-ifeq ($(TARGET_PRODUCT),chroma_shamu)
+ifeq ($(TARGET_PRODUCT),nitrogen_shamu)
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
