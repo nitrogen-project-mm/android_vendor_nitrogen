@@ -38,7 +38,13 @@ PRODUCT_PACKAGES += \
     Busybox \
     Exchange2 \
     Launcher3 \
-    Stk 
+    Stk \
+    messaging \
+    Camera2 \
+    Calendar \
+    DeskClock \
+    LockClock \
+    Email
 
 # APN list
 PRODUCT_COPY_FILES += \
@@ -60,5 +66,3 @@ PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/nitrogen/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/nitrogen/prebuilt/common/etc/backup.conf:system/etc/backup.conf
-
--include vendor/nitrogen/products/common_fingerprints.mk
