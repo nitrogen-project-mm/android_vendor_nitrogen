@@ -67,3 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/nitrogen/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/nitrogen/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# Boot animation
+PRODUCT_COPY_FILES += \
+    vendor/nitrogen/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
