@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
     Calendar \
     DeskClock \
     LockClock \
-    Email
+    Email \
+	CustomWallpapers
 
 # APN list
 PRODUCT_COPY_FILES += \
