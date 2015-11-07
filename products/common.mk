@@ -40,12 +40,11 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Stk \
     messaging \
-    Camera2 \
     Calendar \
     DeskClock \
     LockClock \
     Email \
-	CustomWallpapers
+    CustomWallpapers
 
 # APN list
 PRODUCT_COPY_FILES += \
