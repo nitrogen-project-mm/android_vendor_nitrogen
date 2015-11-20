@@ -46,7 +46,7 @@ PRODUCT_PACKAGES += \
     LockClock \
     Email \
     CustomWallpapers \
-	Terminal
+    Terminal
 
 # APN list
 PRODUCT_COPY_FILES += \
@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/addon.d/50-nitrogen.sh:system/addon.d/50-nitrogen.sh \
+    vendor/nitrogen/prebuilt/common/addon.d/90-layers.sh:system/addon.d/90-layers.sh \
     vendor/nitrogen/prebuilt/common/addon.d/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/nitrogen/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/nitrogen/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
