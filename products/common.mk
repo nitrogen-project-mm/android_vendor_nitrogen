@@ -35,17 +35,11 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Browser \
     Busybox \
-    Exchange2 \
-    Launcher3 \
-    Stk \
-    messaging \
-    Calendar \
-    DeskClock \
-    LockClock \
-    Email \
     CustomWallpapers \
+    Launcher3 \
+    LockClock \
+    Stk \
     Terminal
 
 # APN list
