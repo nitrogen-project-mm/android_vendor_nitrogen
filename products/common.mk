@@ -37,6 +37,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Busybox \
     CustomWallpapers \
+    DaylightHeaderNitrogen \
     Launcher3 \
     LockClock \
     Stk \
