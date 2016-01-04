@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Busybox \
+    Camera2 \
     CustomWallpapers \
     DaylightHeaderNitrogen \
     Launcher3 \
