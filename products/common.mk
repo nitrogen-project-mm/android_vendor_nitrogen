@@ -44,6 +44,16 @@ PRODUCT_PACKAGES += \
     Stk \
     Terminal
 
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh \
+
 # APN list
 PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
