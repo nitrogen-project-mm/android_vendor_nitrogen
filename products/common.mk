@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     Camera2 \
     CustomWallpapers \
     DaylightHeaderNitrogen \
+    Eleven \
     Launcher3 \
     LockClock \
     Stk \
