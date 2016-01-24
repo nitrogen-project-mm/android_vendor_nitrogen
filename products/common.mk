@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     DaylightHeaderNitrogen \
     Eleven \
     Launcher3 \
+    LayersManager \
     LockClock \
     Stk \
     Terminal
