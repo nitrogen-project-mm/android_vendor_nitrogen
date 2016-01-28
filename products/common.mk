@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Busybox \
     Camera2 \
     CustomWallpapers \
@@ -45,7 +44,8 @@ PRODUCT_PACKAGES += \
     LayersManager \
     LockClock \
     Stk \
-    Terminal
+    Terminal \
+    ViPERFX
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -82,3 +82,10 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
+# ViPERFX
+PRODUCT_PROPERTY_OVERRIDES += \
+    lpa.decode=false \
+    lpa.releaselock=false \
+    tunnel.decode=false \
+    lpa.use-stagefright=false
