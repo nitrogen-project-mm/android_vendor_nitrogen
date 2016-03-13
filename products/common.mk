@@ -3,6 +3,8 @@ PRODUCT_NAME := nitrogen
 PRODUCT_BRAND := nitrogen
 PRODUCT_DEVICE := generic
 
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=$(TARGET_PRODUCT)-$(PLATFORM_VERSION)-$(BUILD_ID)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -15,8 +17,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
     ro.build.selinux=1 \
-    ro.adb.secure=1 \
-    ro.build.display.id=nitrogen_build
+    ro.adb.secure=1
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
