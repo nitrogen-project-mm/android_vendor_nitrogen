@@ -12,6 +12,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.network_required=false \
+    ro.setupwizard.gservices_delay=-1 \
     ro.com.android.dataroaming=false \
     drm.service.enabled=true \
     net.tethering.noprovisioning=true \
@@ -56,7 +58,7 @@ PRODUCT_PACKAGES += \
     sshd \
     sshd_config \
     ssh-keygen \
-    start-ssh \
+    start-ssh
 
 # APN list
 PRODUCT_COPY_FILES += \
@@ -81,9 +83,8 @@ PRODUCT_COPY_FILES += \
     vendor/nitrogen/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/nitrogen/prebuilt/common/etc/backup.conf:system/etc/backup.conf
 
-# Boot animation
-PRODUCT_COPY_FILES += \
-    vendor/nitrogen/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+# Boot animations
+$(call inherit-product-if-exists, vendor/nitrogen/products/bootanimation.mk) 
 
 # ViPERFX
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -91,3 +92,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lpa.releaselock=false \
     tunnel.decode=false \
     lpa.use-stagefright=false
+
+# Blobs necessary for media effects
+# Media effects
+PRODUCT_COPY_FILES += \
+    vendor/nitrogen/prebuilt/common/media/LMspeed_508.emd:system/media/LMspeed_508.emd \
+    vendor/nitrogen/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
