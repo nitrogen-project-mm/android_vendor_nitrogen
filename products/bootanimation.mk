@@ -28,6 +28,10 @@ ifneq ($(filter nitrogen_hammerhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nitrogen/prebuilt/common/bootanimation/hammerhead.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter nitrogen_bullhead,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nitrogen/prebuilt/common/bootanimation/hammerhead.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter nitrogen_sprout4,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nitrogen/prebuilt/common/bootanimation/sprout4.zip:system/media/bootanimation.zip
