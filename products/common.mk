@@ -48,7 +48,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     Stk \
     Terminal \
-    ViPERFX
+    ViPERFX \
+    masquerade
 
 # Openssh
 PRODUCT_PACKAGES += \
