@@ -92,9 +92,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lpa.releaselock=false \
     tunnel.decode=false \
     lpa.use-stagefright=false
-
-# Blobs necessary for media effects
-# Media effects
-PRODUCT_COPY_FILES += \
-    vendor/nitrogen/prebuilt/common/media/LMspeed_508.emd:system/media/LMspeed_508.emd \
-    vendor/nitrogen/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
