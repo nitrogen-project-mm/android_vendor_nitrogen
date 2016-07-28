@@ -44,9 +44,9 @@ PRODUCT_PACKAGES += \
     DaylightHeaderNitrogen \
     Eleven \
     Launcher3 \
-    LayersManager \
     LockClock \
     Stk \
+    substratum \
     Terminal \
     ViPERFX \
     masquerade
