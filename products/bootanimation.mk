@@ -32,6 +32,10 @@ ifneq ($(filter nitrogen_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nitrogen/prebuilt/common/bootanimation/1080x1920.zip:system/media/bootanimation.zip
 endif
+ifneq ($(filter nitrogen_shamu,$(TARGET_PRODUCT)),)
+    PRODUCT_COPY_FILES += \
+        vendor/nitrogen/prebuilt/common/bootanimation/1440x2560.zip:system/media/bootanimation.zip
+endif
 ifneq ($(filter nitrogen_sprout4,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
         vendor/nitrogen/prebuilt/common/bootanimation/480x854.zip:system/media/bootanimation.zip
